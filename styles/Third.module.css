@@ -7,7 +7,12 @@
   background-color: rgb(18, 31, 18);
   width: 100%;
   min-height: 100vh;
-  display: flex;
+}
+.grass {
+  margin-top: -100px;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
 }
 
 .leftColumn {
@@ -74,9 +79,8 @@
   cursor: pointer;
   display: flex;
   margin-top: 100px;
-  animation: shake 3s;
+  animation: shake 0.4s linear;
   animation-iteration-count: infinite;
-  animation-delay: 2s;
 }
 .ticketContainer {
   box-sizing: content-box;
@@ -87,26 +91,15 @@
 }
 
 @keyframes shake {
-  10% {
-    transform: rotate(-1deg);
-  }
-  20% {
-    transform: rotate(1deg);
-  }
-  40% {
-    transform: rotate(1deg);
+  0% {
+    transform: rotate(0deg);
   }
   50% {
-    transform: rotate(-1deg);
-  }
-  70% {
-    transform: rotate(-1deg);
-  }
-  80% {
-    transform: rotate(1deg);
+    transform: rotate(-2deg);
   }
 }
 
 .invite {
   margin-top: 4%;
+  max-width: 590px;
 }
