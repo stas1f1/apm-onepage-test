@@ -3,13 +3,12 @@
   src: url(../public/VCR\ Mono\ Font.ttf);
 }
 
-
-
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: myFirstFont;
+  text-transform: uppercase;
 }
 
 a {
@@ -20,5 +19,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-
