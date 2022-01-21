@@ -1,0 +1,13 @@
+.firstBackground {
+    background-image: url(../public/first/first_backgr.svg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.firstTitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 745px;
+}
+
