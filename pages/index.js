@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Third from "./Third";
 import First from "./First";
+import Krutilka from "./Krutilka";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       </Head>
       <First />
 
+      <Third />
+
+      <Krutilka />
       <Third />
     </div>
   );

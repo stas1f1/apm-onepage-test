@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 /materials_1
+/krutilka
 .pnp.js
 
 # testing
