@@ -103,3 +103,36 @@
   margin-top: 4%;
   max-width: 590px;
 }
+
+.button {
+  background-color: #493b2d;
+  max-width: 371px;
+  width: 371px;
+  height: 81px;
+  max-height: 81px;
+  border-radius: 14px;
+  /* border: 1px solid darken(red, 4%); */
+
+  -moz-box-shadow: 0 4px 0px #f4d09c;
+  -webkit-box-shadow: 0 4px 0px #f4d09c;
+  box-shadow: 0 4px 0px #f4d09c;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 33px;
+  color: #f4d09c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

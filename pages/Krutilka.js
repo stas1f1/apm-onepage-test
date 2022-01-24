@@ -1,9 +1,13 @@
 import Image from "next/image";
-import { useState, useLayoutEffect, useEffect } from "react";
-// import  from "../public/krutilka/";
+import { useState, useLayoutEffect, useRef } from "react";
 import styles from "../styles/Krutilka.module.css";
-
-const images = Array.from({ length: 21 }, (v, k) => k + 1);
+import { Parallax, Background } from "react-parallax";
+import Clouds from "../public/krutilka/clouds.png";
+const TOTAL_NUMBER_OF_PICTURES = 21;
+const images = Array.from(
+  { length: TOTAL_NUMBER_OF_PICTURES },
+  (v, k) => k + 1
+);
 
 export default function Krutilka() {
   const [visibleImagesMap, setVisibleImagesMap] = useState(
@@ -12,16 +16,26 @@ export default function Krutilka() {
       return map;
     }, {})
   );
+  const ref = useRef();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    const { current: element } = ref;
     const handleScroll = () => {
-      const scrollTop = document.documentElement.scrollTop;
       const viewportHeight = window.innerHeight;
-      console.log(scrollTop);
+      const { top, bottom, height } = element.getBoundingClientRect();
+      const step = height / (2 * TOTAL_NUMBER_OF_PICTURES);
+
+      const topBorder = top - viewportHeight;
+      const bottomBorder = bottom - viewportHeight - 100; // 100 - высота подкладки для крутилки
+
       const newVisibleImagesMap = images.reduce((map, image) => {
-        map[image] = scrollTop >= image * viewportHeight;
+        map[image] = Math.abs(topBorder) - height + 300 >= (image + 1) * step;
         return map;
       }, {});
+      // фиксация картинки до
+      if (topBorder < 0) {
+        newVisibleImagesMap[1] = true;
+      }
 
       setVisibleImagesMap(newVisibleImagesMap);
     };
@@ -30,20 +44,24 @@ export default function Krutilka() {
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <div className={styles.sticky}>
-      <div className={styles.frame}>
-        {images.map((image) => (
-          <div
-            className={[
-              styles.image,
-              styles[`image_${image}`],
-              visibleImagesMap[image] && styles.image_visible,
-            ].join(" ")}
-            key={image}
-          />
-        ))}
+    <div className={{ display: "flex" }}>
+      <div className={styles.sticky} ref={ref}>
+        <div className={styles.frame}>
+          {images.map((image) => (
+            <div
+              className={[
+                styles.image,
+                styles[`image_${image}`],
+                visibleImagesMap[image] && styles.image_visible,
+              ].join(" ")}
+              key={image}
+            />
+          ))}
+        </div>
       </div>
+      <div className={styles.emptyBlock} />
     </div>
   );
 }
