@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useState, useLayoutEffect, useEffect } from "react";
 // import  from "../public/krutilka/";
 import styles from "../styles/Krutilka.module.css";
-import classnames from "classnames";
 
 const images = Array.from({ length: 21 }, (v, k) => k + 1);
 
@@ -31,7 +30,6 @@ export default function Krutilka() {
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  console.log(classnames("image", "image_1", "image_visible"));
   return (
     <div className={styles.sticky}>
       <div className={styles.frame}>
