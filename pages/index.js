@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Third from "./Third";
 import First from "./First";
+import Faq from "./Faq";
+import Legendaries from "./Legendaries";
 
 export default function Home() {
   return (
@@ -15,6 +17,10 @@ export default function Home() {
       <First />
 
       <Third />
+
+      <Legendaries />
+
+      <Faq />
     </div>
   );
 }
