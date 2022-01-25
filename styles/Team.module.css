@@ -1,0 +1,105 @@
+.clouds {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 326px;
+  margin-top: -100px;
+}
+
+.teamTag {
+  height: 133;
+  margin-top: 45px;
+  width: 451px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background {
+  height: 1770px;
+  max-height: 1770px;
+  width: 100%;
+  background-image: url(../public/team/Brown-bg.jpg);
+
+  background-blend-mode: soft-light;
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+}
+
+.textHighlight {
+  color: #d7b98a;
+  font-size: 27px;
+  text-align: center;
+  line-height: 27px;
+  max-width: 672px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.descriptionHighlighted {
+  margin-top: 17px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #d7b98a;
+}
+
+.team {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 19px;
+  text-align: center;
+  line-height: 100%;
+
+  align-items: flex-start;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.imageWrapper {
+  max-width: 430px;
+  margin-bottom: 30px;
+
+  transition: all 3s linear;
+}
+
+.imageWrapper:hover {
+  animation: smooth_move 3s infinite;
+  /* background-color: red; */
+}
+
+@keyframes smooth_move {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.descriptionWrapper {
+  margin-top: 17px;
+  max-width: 402px;
+}
+
+.grass {
+  margin-top: -300px;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+}

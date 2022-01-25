@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState, useLayoutEffect, useRef } from "react";
 import styles from "../styles/Krutilka.module.css";
 import { Parallax, Background } from "react-parallax";
-import Clouds from "../public/krutilka/clouds.png";
+
 const TOTAL_NUMBER_OF_PICTURES = 21;
 const images = Array.from(
   { length: TOTAL_NUMBER_OF_PICTURES },
@@ -26,10 +26,10 @@ export default function Krutilka() {
       const step = height / (2 * TOTAL_NUMBER_OF_PICTURES);
 
       const topBorder = top - viewportHeight;
-      const bottomBorder = bottom - viewportHeight - 100; // 100 - высота подкладки для крутилки
+      const bottomBorder = bottom - viewportHeight; // 100 - высота подкладки для крутилки
 
       const newVisibleImagesMap = images.reduce((map, image) => {
-        map[image] = Math.abs(topBorder) - height + 300 >= (image + 1) * step;
+        map[image] = Math.abs(topBorder) - height + 500 >= (image + 1) * step;
         return map;
       }, {});
       // фиксация картинки до

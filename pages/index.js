@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Third from "./Third";
 import First from "./First";
 import Krutilka from "./Krutilka";
+import Team from "./Team";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <Third />
 
       <Krutilka />
-      <Third />
+      <Team />
     </div>
   );
 }
