@@ -1,0 +1,141 @@
+.sticky {
+  min-height: 1000px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  width: 80%;
+  max-width: 80%;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  max-height: 800px;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.krutilka_container {
+  overflow: hidden;
+}
+
+.image_1 {
+  z-index: 1;
+  background-image: url(../public/krutilka/1.jpg);
+}
+
+.image_2 {
+  z-index: 2;
+  background-image: url(../public/krutilka/2.jpg);
+}
+
+.image_3 {
+  z-index: 3;
+  background-image: url(../public/krutilka/3.jpg);
+}
+
+.image_4 {
+  z-index: 4;
+  background-image: url(../public/krutilka/4.jpg);
+}
+
+.image_5 {
+  z-index: 5;
+  background-image: url(../public/krutilka/5.jpg);
+}
+
+.image_6 {
+  z-index: 6;
+  background-image: url(../public/krutilka/6.jpg);
+}
+
+.image_7 {
+  z-index: 7;
+  background-image: url(../public/krutilka/7.jpg);
+}
+
+.image_8 {
+  z-index: 8;
+  background-image: url(../public/krutilka/8.jpg);
+}
+.image_9 {
+  z-index: 9;
+  background-image: url(../public/krutilka/9.jpg);
+}
+.image_10 {
+  z-index: 10;
+  background-image: url(../public/krutilka/10.jpg);
+}
+
+.image_11 {
+  z-index: 11;
+  background-image: url(../public/krutilka/11.jpg);
+}
+
+.image_12 {
+  z-index: 12;
+  background-image: url(../public/krutilka/12.jpg);
+}
+
+.image_13 {
+  z-index: 13;
+  background-image: url(../public/krutilka/13.jpg);
+}
+
+.image_14 {
+  z-index: 14;
+  background-image: url(../public/krutilka/14.jpg);
+}
+
+.image_15 {
+  z-index: 15;
+  background-image: url(../public/krutilka/15.jpg);
+}
+
+.image_16 {
+  z-index: 16;
+  background-image: url(../public/krutilka/16.jpg);
+}
+
+.image_17 {
+  z-index: 17;
+  background-image: url(../public/krutilka/17.jpg);
+}
+.image_18 {
+  z-index: 18;
+  background-image: url(../public/krutilka/18.jpg);
+}
+.image_19 {
+  z-index: 19;
+  background-image: url(../public/krutilka/19.jpg);
+}
+.image_20 {
+  z-index: 20;
+  background-image: url(../public/krutilka/20.jpg);
+}
+.image_21 {
+  z-index: 21;
+  background-image: url(../public/krutilka/21.jpg);
+}
+
+.image_visible {
+  opacity: 1;
+}
+
+.emptyBlock {
+  min-width: 100%;
+  width: 100%;
+  min-height: 100px;
+  height: 100px;
+  background-color: white;
+}

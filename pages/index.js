@@ -5,6 +5,7 @@ import Third from "./Third";
 import First from "./First";
 import Faq from "./Faq";
 import Legendaries from "./Legendaries";
+import Krutilka from "./Krutilka";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Third />
 
       <Legendaries />
+      <Krutilka />
 
       <Faq />
     </div>

@@ -19,7 +19,19 @@ const Third = () => {
 
   return (
     <div className={styles.background}>
-      <div style={{ display: "flex" }}>
+      <div className={styles.row}>
+        <p style={{ fontSize: "29px", textAlign: "center" }}>
+          We don't know who you are. We don't know where you come from. <br />
+          But we're sure to make you&nbsp;
+          <span className={styles.textHighlight}>quack</span> to the beat with
+          us.
+        </p>
+      </div>
+      <div className={styles.row}>
+        <div className={styles.button}>TRY TO QUACK!</div>
+      </div>
+
+      <div style={{ display: "flex", marginTop: 71 }}>
         <div className={styles.leftColumn}>
           <div data-aos="fade-up" data-aos-duration="1000">
             <Image src={HEY_IMG} alt={"Hey!"} />
