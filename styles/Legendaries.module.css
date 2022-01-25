@@ -1,0 +1,61 @@
+.legendariesContainer {
+  background-image: url(../public/legendaries/Cream-back.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.legendariesLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.legendariesDesk {
+  padding-top: 80px;
+  padding-right: 10px;
+  padding-bottom: 105px;
+  display: table;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.deskRow1,
+.deskRow2,
+.deskRow3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deskRow2 {
+  width: 750px;
+  padding: 48px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legTextBlack,
+.legTextBasic {
+  width: 870px;
+  font-family: VCR OSD Mono [RUS by Daymarius];
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legTextBasic {
+  color: #7d4f3b;
+}
+
+.legImg {
+  transition: transform 0.5s;
+}
+
+.legImg:hover {
+  transform: scale(1.05);
+}

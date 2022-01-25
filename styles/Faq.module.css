@@ -1,0 +1,76 @@
+.faqClouds {
+  width: 100%;
+  height: 315px;
+  background-color: #d5c4ba;
+  transform: rotate(180deg);
+}
+
+.faqLogo {
+  width: 320px;
+  height: 170px;
+  padding-top: 170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.faqText {
+  padding-top: 250px;
+  width: 1057px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faqTextBlack {
+  font-family: VCR OSD Mono [RUS by Daymarius];
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 21px;
+  text-align: justify;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.faqTextBasic {
+  font-family: VCR OSD Mono [RUS by Daymarius];
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 21px;
+  text-align: justify;
+  text-transform: uppercase;
+
+  color: #7d4f3b;
+
+  padding-bottom: 20px;
+}
+
+.footerText {
+  width: 715px;
+  height: 71px;
+
+  font-family: VCR OSD Mono [RUS by Daymarius];
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: justify;
+  text-transform: uppercase;
+
+  color: #7d4f3b;
+}
+
+.footer {
+  padding-top: 180px;
+  padding-left: 425px;
+}
+
+.logoTBr {
+  padding-bottom: 20px;
+}
+
+.microDuck {
+  padding-left: 950px;
+  margin-top: -90px;
+}
