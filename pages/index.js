@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Third from "./Third";
 import First from "./First";
@@ -7,6 +6,7 @@ import Faq from "./Faq";
 import Legendaries from "./Legendaries";
 import Krutilka from "./Krutilka";
 import Team from "./Team";
+import Roadmap from "./Roadmap";
 
 export default function Home() {
   return (
@@ -23,6 +23,7 @@ export default function Home() {
       <Legendaries />
       <Krutilka />
       <Team />
+      <Roadmap />
 
       <Faq />
     </div>

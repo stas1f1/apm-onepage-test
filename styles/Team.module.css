@@ -24,6 +24,8 @@
   background-blend-mode: soft-light;
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
+  position: relative;
+  z-index: -3;
 }
 
 .textHighlight {
@@ -76,6 +78,7 @@
 }
 
 .imageWrapper:hover {
+  transition: all 3s linear;
   animation: smooth_move 3s infinite;
   /* background-color: red; */
 }
@@ -95,11 +98,4 @@
 .descriptionWrapper {
   margin-top: 17px;
   max-width: 402px;
-}
-
-.grass {
-  margin-top: -300px;
-  width: 100%;
-  min-width: 100%;
-  position: relative;
 }

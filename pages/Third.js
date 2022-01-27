@@ -21,8 +21,9 @@ const Third = () => {
     <div className={styles.background}>
       <div className={styles.row}>
         <p style={{ fontSize: "29px", textAlign: "center" }}>
-          We don't know who you are. We don't know where you come from. <br />
-          But we're sure to make you&nbsp;
+          We don&apos;t know who you are. We don&apos;t know where you come
+          from. <br />
+          But we&apos;re sure to make you&nbsp;
           <span className={styles.textHighlight}>quack</span> to the beat with
           us.
         </p>

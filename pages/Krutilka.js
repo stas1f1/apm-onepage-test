@@ -1,7 +1,5 @@
-import Image from "next/image";
-import { useState, useLayoutEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "../styles/Krutilka.module.css";
-import { Parallax, Background } from "react-parallax";
 
 const TOTAL_NUMBER_OF_PICTURES = 21;
 const images = Array.from(
@@ -18,7 +16,7 @@ export default function Krutilka() {
   );
   const ref = useRef();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const { current: element } = ref;
     const handleScroll = () => {
       const viewportHeight = window.innerHeight;
