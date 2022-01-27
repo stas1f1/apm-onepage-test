@@ -9,6 +9,7 @@ import JOK from "../public/legendaries/jok.png";
 import MET from "../public/legendaries/met.png";
 import SNA from "../public/legendaries/sna.png";
 import AR from "../public/legendaries/ar.png";
+// import HVOST_GRADIENT from "../public/legendaries/hvost-gradient.png";
 
 export default function Legendaries() {
   return (
@@ -50,11 +51,13 @@ export default function Legendaries() {
           </div>
         </div>
       </div>
-      <div className={styles.legendariesText}>
-        <p className={styles.legTextBasic}>and more and more and more</p>
-        <p className={styles.legTextBlack}>
-          We love culture and always work for it.
-        </p>
+      <div className={styles.hvost}>
+        <div className={styles.legendariesText}>
+          <p className={styles.legTextBasic}>and more and more and more</p>
+          <p className={styles.legTextBlack}>
+            We love culture and always work for it.
+          </p>
+        </div>
       </div>
     </div>
   );

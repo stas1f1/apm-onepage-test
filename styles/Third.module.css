@@ -3,11 +3,23 @@
   background-blend-mode: soft-light;
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
+  background-position: top -60px right 0px;
 
-  background-color: rgb(18, 31, 18);
+  background-color: rgb(30, 39, 26);
   width: 100%;
   min-height: 100vh;
 }
+
+.grad {
+  background-image: url(../public/third/grad.png);
+  background-position: 0px -300px;
+}
+
+.thirdText {
+  font-size: 29px;
+  text-align: center;
+}
+
 .grass {
   margin-top: -100px;
   width: 100%;
@@ -15,21 +27,34 @@
   position: relative;
 }
 
+.columns {
+  display: flex;
+  margin-top: 71px;
+  margin-left: 0;
+}
+
 .leftColumn {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  margin-left: 250px;
   max-width: 685px;
   color: white;
   height: 100%;
+  padding-top: 30px;
 }
 
 .rightColumn {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  /* max-width: 50%; */
   align-items: center;
-  margin-right: auto;
+  margin-right: 0;
+  padding-top: 80px;
+  padding-left: 195px;
+}
+
+.heyLogo {
+  margin-bottom: 20px;
 }
 
 .separator {
@@ -44,6 +69,15 @@
   position: relative;
   min-height: 20px;
 }
+
+.thirdText {
+  width: 100%;
+}
+
+.txt {
+  text-align: justify;
+}
+
 .textUpper {
   font-size: 24px;
   line-height: 24px;
@@ -74,7 +108,7 @@
 }
 
 .animatedTicketContainer {
-  max-width: 500px;
+  max-width: 400px;
   box-sizing: content-box;
   cursor: pointer;
   display: flex;
@@ -102,6 +136,7 @@
 .invite {
   margin-top: 4%;
   max-width: 590px;
+  margin-bottom: -40px;
 }
 
 .button {
@@ -125,6 +160,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  margin-top: 47px;
 }
 
 .button:active {
@@ -135,4 +172,13 @@
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+.miniGrad {
+  height: 230px;
+  background: linear-gradient(rgba(38, 46, 31, 1), rgba(41, 49, 37, 0.1));
+}
+
+.txtBtn {
+  margin-top: -200px;
 }
