@@ -1,7 +1,7 @@
 .legendariesContainer {
-  background-image: url(../public/legendaries/Cream-back.png);
+  background-image: url(../public/legendaries/leg_back.png);
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -13,7 +13,6 @@
 .legendariesDesk {
   padding-top: 80px;
   padding-right: 10px;
-  padding-bottom: 105px;
   display: table;
   width: 1150px;
   margin-left: auto;
@@ -52,10 +51,24 @@
   color: #7d4f3b;
 }
 
+.legTextBlack {
+  color: black;
+}
+
 .legImg {
   transition: transform 0.5s;
 }
 
 .legImg:hover {
   transform: scale(1.05);
+}
+
+.legendariesText {
+  padding-top: 200px;
+}
+
+.hvost {
+  background-image: url(../public/legendaries/hvost-gradient.png);
+  height: 720px;
+  margin-top: -80px;
 }
