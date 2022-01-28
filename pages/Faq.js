@@ -9,7 +9,11 @@ export default function Faq() {
   return (
     <div id="faq">
       <div className={styles.faqClouds}>
-        <Image src={CLOUDS} width={1950} height={350} />
+        <div className={styles.triangles}></div>
+
+        <div className={styles.cloudsImg}>
+          <Image src={CLOUDS} layout="responsive" />
+        </div>
       </div>
       <div className={styles.faqContainer}>
         <div className={styles.faqLogo}>
