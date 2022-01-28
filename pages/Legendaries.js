@@ -13,7 +13,7 @@ import AR from "../public/legendaries/ar.png";
 
 export default function Legendaries() {
   return (
-    <div className={styles.legendariesContainer}>
+    <div className={styles.legendariesContainer} id="legendaries">
       <div className={styles.legendariesLogo}>
         <Image src={LEG_BR} width={1042} height={168} />
       </div>

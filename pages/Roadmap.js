@@ -72,7 +72,7 @@ const Roadmap = () => {
   }, []);
 
   const renderContent = () => (
-    <div className={styles.stepContent}>
+    <div className={styles.stepContent} id="roadmap">
       <div className={styles.stepElement}>
         <span>1 STEP</span>
         <p>
@@ -125,7 +125,7 @@ const Roadmap = () => {
           </div>
           <div
             className={styles.roadmapFrame}
-            style={{ transform: `translateY(${offsetYRoadmap * 0.2}px)` }}
+            style={{ transform: `translateY(-${offsetYRoadmap * 0.2}px)` }}
           >
             <div className={styles.roadmapContainer}>
               <div style={{ maxWidth: 960, height: 160 }}>

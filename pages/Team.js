@@ -11,7 +11,7 @@ import JOJE_IMG from "../public/team/joje.png";
 
 export default function Team() {
   return (
-    <div className={styles.background}>
+    <div className={styles.background} id="team">
       <div className={styles.clouds}>
         <Image src={CLOUD_IMG} layout="fill" />
       </div>

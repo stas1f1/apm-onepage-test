@@ -1,7 +1,7 @@
 .legendariesContainer {
   background-image: url(../public/legendaries/leg_back.png);
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

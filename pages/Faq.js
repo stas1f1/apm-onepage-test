@@ -7,7 +7,7 @@ import MICRO_DUCK from "../public/faq/micro-duck.png";
 
 export default function Faq() {
   return (
-    <div>
+    <div id="faq">
       <div className={styles.faqClouds}>
         <Image src={CLOUDS} width={1950} height={350} />
       </div>

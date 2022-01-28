@@ -1,39 +1,36 @@
 .header {
-    height: 130px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  height: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav {
-    width: 820px;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 66px;
-
+  width: 820px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 66px;
 }
 
 .social {
-    width: 158px;
-    max-height: 100px;
-    padding-top:50px;
-    display: flex;
-    justify-content: space-between;
-
-
+  width: 158px;
+  max-height: 100px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
-
 .logo {
-    padding-top:46px;
+  padding-top: 46px;
 }
 
 .navItem {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #7D4F3B;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d4f3b;
+  cursor: pointer;
 }

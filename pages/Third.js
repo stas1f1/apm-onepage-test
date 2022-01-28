@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import HEY_IMG from "../public/third/HEY.png";
 import INV_IMG from "../public/third/inv.png";
-import BOOK_IMG from "../public/third/BOOK.png";
+import BOOK_IMG from "../public/third/BOOK_FULL.png";
 import LAPKA_IMG from "../public/third/lapka.png";
 import GRASS_IMG from "../public/third/grass.png";
 import TICKET_LEFT_IMG from "../public/third/TICKET.png";
@@ -18,7 +18,7 @@ const Third = () => {
   };
 
   return (
-    <div className={styles.background}>
+    <div className={styles.background} id="about">
       <div className={styles.grad}>
         <div className={styles.miniGrad}></div>
         <div className={styles.txtBtn}>
@@ -97,22 +97,36 @@ const Third = () => {
                   </p>
                 </div>
               </div>
-
+            </div>
+            <div
+              data-aos="fadeIn"
+              data-aos-duration="1500"
+              data-aos-delay="1000"
+            >
               <div
                 className={
                   ticketClicked
-                    ? styles.ticketContainer
-                    : styles.animatedTicketContainer
+                    ? styles.ticketFrame
+                    : styles.animatedTicketFrame
                 }
                 onClick={handleTicketClick}
               >
-                <Image src={TICKET_LEFT_IMG} alt={"ticket"} />
                 <div
-                  className={
-                    ticketClicked ? styles.ticketStart : styles.imageWrapper
-                  }
+                  style={{
+                    cursor: "pointer",
+                    objectFit: "fill",
+                    maxHeight: 180,
+                  }}
                 >
-                  <Image src={TICKET_RIGHT_IMG} alt={"ticket"} />
+                  <Image src={TICKET_LEFT_IMG} width={280} height={160} />
+                </div>
+                <div
+                  className={styles.rightTicketPart}
+                  style={{
+                    transform: `translateX(${ticketClicked ? 28 : 0}px)`,
+                  }}
+                >
+                  <Image src={TICKET_RIGHT_IMG} width={100} height={160} />
                 </div>
               </div>
             </div>
@@ -127,21 +141,22 @@ const Third = () => {
                 <Image src={INV_IMG} alt={"invite message"} />
               </div>
             </div>
-
             <div
-              data-aos="fade-left"
-              data-aos-duration="2000"
-              data-aos-delay="1000"
-              className={styles.bookWrapper}
+              style={{ position: "relative", width: "100%", height: "100%" }}
             >
-              <Image
-                src={BOOK_IMG}
-                alt={"Family book"}
-                height={937}
-                width={778}
-                // layout="fill"
-                // objectFit="contain"
-              />
+              <div
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
+                className={styles.bookWrapper}
+              >
+                <Image
+                  src={BOOK_IMG}
+                  alt={"Family book"}
+                  // layout="fill"
+                  // objectFit="contain"
+                />
+              </div>
             </div>
           </div>
         </div>
