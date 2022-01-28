@@ -3,6 +3,7 @@
   height: 172px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 20px;
 }
 
 .emoji {
@@ -10,7 +11,7 @@
   height: 62px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 39px;
+  margin-top: 49px;
 
   font-family: Roboto;
   font-style: normal;

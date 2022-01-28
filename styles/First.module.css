@@ -1,7 +1,9 @@
 .firstBackground {
-  background-image: url(../public/first/first_backgr.svg);
+  background-image: url(../public/first/first_backgrr.svg);
   width: 100%;
   background-size: cover;
+  max-height: 2655px;
+  overflow: hidden;
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -9,5 +11,5 @@
 .firstTitle {
   display: flex;
   justify-content: center;
-  margin-bottom: 745px;
+  margin-bottom: 800px;
 }
