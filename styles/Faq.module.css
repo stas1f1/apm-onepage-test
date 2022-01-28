@@ -77,10 +77,12 @@
 
   color: #7d4f3b;
 }
-
+.flexFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+}
 .footer {
-  padding-top: 180px;
-  padding-left: 425px;
   background-color: #fff;
 }
 

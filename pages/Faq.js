@@ -65,19 +65,20 @@ export default function Faq() {
             website.<br></br>
             after initial mint, contract will be made available for review.
           </div>
-        </div>
-      </div>
-      <div className={styles.footer}>
-        <div className={styles.logoTBr}>
-          <Image src={LOGO_T_BR} width={185} height={115} />
-        </div>
-        <div className={styles.footerText}>
-          ©powered by solana, vercelapp, APEROLMAMI ducks club team and friends
-          <br></br>
-          2020-2022
-        </div>
-        <div className={styles.microDuck}>
-          <Image src={MICRO_DUCK} width={75} height={73} />
+          <div className={styles.footer}>
+            <div className={styles.logoTBr}>
+              <Image src={LOGO_T_BR} width={185} height={115} />
+            </div>
+            <div className={styles.footerText}>
+              ©powered by solana, vercelapp, APEROLMAMI ducks club team and
+              friends
+              <br></br>
+              2020-2022
+            </div>
+            <div className={styles.microDuck}>
+              <Image src={MICRO_DUCK} width={75} height={73} />
+            </div>
+          </div>
         </div>
       </div>
     </div>

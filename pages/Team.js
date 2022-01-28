@@ -64,7 +64,7 @@ export default function Team() {
           </div>
         </div>
       </div>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative", marginTop: "auto" }}>
         <Image src={GRASS_IMG} layout="responsive" />
       </div>
     </div>
