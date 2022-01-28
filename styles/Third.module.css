@@ -16,16 +16,14 @@
 }
 
 .thirdText {
-  font-size: 29px;
   text-align: center;
 }
 
 .grass {
-  margin-top: -100px;
   width: 100%;
   min-width: 100%;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .columns {
@@ -47,11 +45,12 @@
 .rightColumn {
   display: flex;
   flex-direction: column;
-  /* max-width: 50%; */
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-right: 0;
   padding-top: 80px;
   padding-left: 195px;
+  width: 100%;
 }
 
 .heyLogo {
@@ -106,10 +105,12 @@
 .bookWrapper {
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
   overflow: hidden;
+  background-image: url("../public/third/BOOK_FULL.png");
+  background-size: cover;
+  min-width: 500px;
+  margin-top: 50px;
 }
 
 .textHighlight {
@@ -126,9 +127,10 @@
 }
 
 .invite {
-  margin-top: 4%;
+  margin-top: 0%;
   max-width: 590px;
   margin-bottom: -40px;
+  margin-left: 100px;
 }
 
 .button {
@@ -180,6 +182,7 @@
   transition: all 1s linear;
 }
 .ticketFrame {
+  z-index: 3;
   cursor: pointer;
   display: flex;
   max-height: 160px;
@@ -187,6 +190,8 @@
 }
 
 .animatedTicketFrame {
+  z-index: 3;
+
   cursor: pointer;
   display: flex;
   max-height: 160px;

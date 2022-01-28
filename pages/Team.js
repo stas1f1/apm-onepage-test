@@ -8,6 +8,7 @@ import TEAM3_IMG from "../public/team/team3.png";
 import TWISTY_IMG from "../public/team/twisty.png";
 import MEAT_IMG from "../public/team/meat.png";
 import JOJE_IMG from "../public/team/joje.png";
+import GRASS_IMG from "../public/third/grass.png";
 
 export default function Team() {
   return (
@@ -62,6 +63,9 @@ export default function Team() {
             </p>
           </div>
         </div>
+      </div>
+      <div style={{ position: "relative", marginTop: "auto" }}>
+        <Image src={GRASS_IMG} layout="responsive" />
       </div>
     </div>
   );

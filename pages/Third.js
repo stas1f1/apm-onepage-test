@@ -55,7 +55,7 @@ const Third = () => {
 
                 <div className={styles.thirdText}>
                   <p className={styles.txt}>
-                    <span className={styles.txt}>
+                    <span>
                       The aperolmami duck club gives you the most comfortable
                       seats on our flight. It will be very fast with&nbsp;
                       <span
@@ -149,16 +149,7 @@ const Third = () => {
                 data-aos-duration="2000"
                 data-aos-delay="1000"
                 className={styles.bookWrapper}
-              >
-                <Image
-                  src={BOOK_IMG}
-                  alt={"Family book"}
-                  className={{ height: "100%", width: "100%" }}
-
-                  // layout="fill"
-                  // objectFit="contain"
-                />
-              </div>
+              ></div>
             </div>
           </div>
         </div>
