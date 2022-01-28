@@ -1,6 +1,7 @@
 .faqClouds {
   width: 100%;
   transform: rotate(180deg);
+  margin-top: -350px;
 }
 
 .faqContainer {
