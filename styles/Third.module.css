@@ -25,6 +25,7 @@
   width: 100%;
   min-width: 100%;
   position: relative;
+  z-index: 2;
 }
 
 .columns {

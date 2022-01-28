@@ -9,46 +9,6 @@ import KROSS_IMG from "../public/roadmap/kross.svg";
 import { useState, useEffect, useRef } from "react";
 import KROSS_RIGHT_IMG from "../public/roadmap/kross_right.svg";
 import RIGHT_HAT_IMG from "../public/roadmap/right_hat.svg";
-// export const Roadmap = () => {
-//   const [offsetY, setOffsetY] = useState(0);
-//   const handleScroll = () => setOffsetY(window.pageYOffset);
-
-//   useEffect(() => {
-//     window.addEventListener("scroll", handleScroll);
-
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   return (
-//     <section style={{ position: "relative" }}>
-// <div className={styles.grass}>
-//   <Image src={GRASS_IMG} alt={"grass!"} layout={"responsive"} />
-// </div>
-//       <div
-//         style={{
-//           transform: `translateY(${offsetY * 0.8}px)`,
-//           objectFit: "fill",
-//           height: "1000px",
-//           width: "1000px",
-//         }}
-//       >
-//         <Image src={BG_IMG} />
-//       </div>
-//       <div className={styles.frame}>
-//         <div className={styles.roadmap_container}>
-//           <div className={styles.flex_center}>
-//             <div className={styles.imageWrapper}>
-//               <Image src={ROADMAP_IMG} />
-//               <div className={styles.hat}>
-//                 <Image src={HAT_IMG} />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
 
 const Roadmap = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -103,69 +63,73 @@ const Roadmap = () => {
       </div>
     </div>
   );
-  // console.log(ref?.current?.getBoundingClientRect()?.top, offsetY);
+  console.log(offsetYRoadmap, offsetY);
   return (
-    <>
-      <div
-        style={{ position: "relative", width: "100%", paddingTop: "5%" }}
-        ref={ref}
-      >
-        <section className={styles.Parallax} ref={roadmapRef}>
-          <div
-            className={styles.background}
-            style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
-          >
-            <Image src={BG_IMG} alt={"grass!"} layout="responsive" />
-          </div>
-          <div
-            className={styles.grass}
-            style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
-          >
-            <Image src={GRASS_IMG} alt={"grass!"} layout="responsive" />
-          </div>
-          <div
-            className={styles.roadmapFrame}
-            style={{ transform: `translateY(-${offsetYRoadmap * 0.2}px)` }}
-          >
-            <div className={styles.roadmapContainer}>
-              <div style={{ maxWidth: 960, height: 160 }}>
-                <Image src={ROADMAP_IMG} />
-              </div>
-              <div className={styles.hat}>
-                <Image src={HAT_IMG} />
-              </div>
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        paddingTop: "5%",
+        maxHeight: "2000px",
+        overflow: "hidden",
+      }}
+      ref={ref}
+    >
+      <section className={styles.Parallax}>
+        <div
+          className={styles.background}
+          style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
+        >
+          <Image src={BG_IMG} layout="responsive" />
+        </div>
+        <div
+          className={styles.grass}
+          style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
+        >
+          <Image src={GRASS_IMG} alt={"grass!"} layout="responsive" />
+        </div>
+        <div
+          className={styles.roadmapFrame}
+          style={{ transform: `translateY(-${offsetYRoadmap * 0.2}px)` }}
+        >
+          <div className={styles.roadmapContainer}>
+            <div style={{ maxWidth: 960, height: 160 }}>
+              <Image src={ROADMAP_IMG} />
             </div>
-            <div className={styles.parallaxGrid}>
-              <div className={styles.firstParallaxColumn}>
-                <div className={styles.greenHatContainer}>
-                  <div>
-                    <Image src={GREEN_HAT_IMG} />
-                  </div>
-                </div>
-                <div className={styles.krossContainer}>
-                  <div>
-                    <Image src={KROSS_IMG} />
-                  </div>
+            <div className={styles.hat}>
+              <Image src={HAT_IMG} />
+            </div>
+          </div>
+          <div className={styles.parallaxGrid}>
+            <div className={styles.firstParallaxColumn}>
+              <div className={styles.greenHatContainer}>
+                <div>
+                  <Image src={GREEN_HAT_IMG} />
                 </div>
               </div>
-              <div className={styles.secondParallaxColumn}>
-                <div className={styles.krossRightContainer}>
-                  <div>
-                    <Image src={KROSS_RIGHT_IMG} />
-                  </div>
-                </div>
-                <div className={styles.rightHatContainer}>
-                  <div>
-                    <Image src={RIGHT_HAT_IMG} />
-                  </div>
+              <div className={styles.krossContainer}>
+                <div>
+                  <Image src={KROSS_IMG} />
                 </div>
               </div>
             </div>
+            <div className={styles.secondParallaxColumn}>
+              <div className={styles.krossRightContainer}>
+                <div>
+                  <Image src={KROSS_RIGHT_IMG} />
+                </div>
+              </div>
+              <div className={styles.rightHatContainer} ref={roadmapRef}>
+                <div>
+                  <Image src={RIGHT_HAT_IMG} />
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-        {renderContent()}
-      </div>
-    </>
+        </div>
+      </section>
+      {renderContent()}
+    </div>
   );
 };
 

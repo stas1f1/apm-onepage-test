@@ -153,6 +153,8 @@ const Third = () => {
                 <Image
                   src={BOOK_IMG}
                   alt={"Family book"}
+                  className={{ height: "100%", width: "100%" }}
+
                   // layout="fill"
                   // objectFit="contain"
                 />
