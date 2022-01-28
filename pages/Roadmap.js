@@ -33,6 +33,14 @@ const Roadmap = () => {
 
   const renderContent = () => (
     <div className={styles.stepContent} id="roadmap">
+      <div className={styles.roadmapContainer}>
+        <div style={{ maxWidth: 960, height: 160 }}>
+          <Image src={ROADMAP_IMG} />
+        </div>
+        <div className={styles.hat}>
+          <Image src={HAT_IMG} />
+        </div>
+      </div>
       <div className={styles.stepElement}>
         <span>1 STEP</span>
         <p>
@@ -63,7 +71,7 @@ const Roadmap = () => {
       </div>
     </div>
   );
-  console.log(offsetYRoadmap, offsetY);
+
   return (
     <div
       style={{
@@ -71,7 +79,7 @@ const Roadmap = () => {
         width: "100%",
         paddingTop: "5%",
         maxHeight: "2000px",
-        overflow: "hidden",
+        overflowY: "hidden",
       }}
       ref={ref}
     >
@@ -82,24 +90,11 @@ const Roadmap = () => {
         >
           <Image src={BG_IMG} layout="responsive" />
         </div>
-        <div
-          className={styles.grass}
-          style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
-        >
-          <Image src={GRASS_IMG} alt={"grass!"} layout="responsive" />
-        </div>
+
         <div
           className={styles.roadmapFrame}
-          style={{ transform: `translateY(-${offsetYRoadmap * 0.2}px)` }}
+          style={{ transform: `translateY(-${offsetYRoadmap * 0.15}px)` }}
         >
-          <div className={styles.roadmapContainer}>
-            <div style={{ maxWidth: 960, height: 160 }}>
-              <Image src={ROADMAP_IMG} />
-            </div>
-            <div className={styles.hat}>
-              <Image src={HAT_IMG} />
-            </div>
-          </div>
           <div className={styles.parallaxGrid}>
             <div className={styles.firstParallaxColumn}>
               <div className={styles.greenHatContainer}>
