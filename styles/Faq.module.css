@@ -1,7 +1,10 @@
 .faqClouds {
   width: 100%;
-  background-color: #d5c4ba;
   transform: rotate(180deg);
+}
+
+.faqContainer {
+  background-color: #fff;
 }
 
 .faqLogo {
@@ -63,6 +66,7 @@
 .footer {
   padding-top: 180px;
   padding-left: 425px;
+  background-color: #fff;
 }
 
 .logoTBr {
