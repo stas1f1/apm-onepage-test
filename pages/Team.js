@@ -12,11 +12,11 @@ import GRASS_IMG from "../public/third/grass.png";
 
 export default function Team() {
   return (
-    <div className={styles.background} id="team">
+    <div className={styles.background}>
       <div className={styles.clouds}>
         <Image src={CLOUD_IMG} layout="fill" />
       </div>
-      <div className={styles.teamTag}>
+      <div className={styles.teamTag} id="team">
         <Image src={TEAM_IMG} />
       </div>
       <p className={styles.textHighlight}>

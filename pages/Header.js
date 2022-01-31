@@ -4,13 +4,25 @@ import LOGO_TOP_BR from "../public/header/logo_top_br.png";
 import DISCORD_BR from "../public/header/discord_br.png";
 import TWITTER_BR from "../public/header/twitter_br.png";
 
-import {
-  handleAbout,
-  handleLegendaries,
-  handleTeam,
-  handleRoadmap,
-  handleFaq,
-} from "./helpers";
+const handleAbout = () => {
+  document.getElementById("about").scrollIntoView();
+};
+
+const handleLegendaries = () => {
+  document.getElementById("legendaries").scrollIntoView();
+};
+
+const handleRoadmap = () => {
+  document.getElementById("roadmap").scrollIntoView();
+};
+
+const handleTeam = () => {
+  document.getElementById("team").scrollIntoView();
+};
+
+const handleFaq = () => {
+  document.getElementById("faq").scrollIntoView();
+};
 
 export default function Header() {
   return (

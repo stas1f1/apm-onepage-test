@@ -22,7 +22,6 @@
 .grass {
   width: 100%;
   min-width: 100%;
-  position: relative;
   z-index: 1;
 }
 
@@ -35,11 +34,23 @@
 .leftColumn {
   display: flex;
   flex-direction: column;
-  margin-left: 250px;
-  max-width: 685px;
+  margin-left: 5%;
+  max-width: 665px;
   color: white;
   height: 100%;
   padding-top: 30px;
+}
+
+@media screen and (min-width: 2500px) {
+  .leftColumn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    max-width: 685px;
+    color: white;
+    height: 100%;
+    padding-top: 30px;
+  }
 }
 
 .rightColumn {
@@ -49,8 +60,21 @@
   align-items: flex-start;
   margin-right: 0;
   padding-top: 80px;
-  padding-left: 195px;
+  padding-left: 100px;
   width: 100%;
+}
+
+@media screen and (min-width: 1700px) {
+  .rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 0;
+    padding-top: 80px;
+    padding-left: 195px;
+    width: 100%;
+  }
 }
 
 .heyLogo {
@@ -103,16 +127,30 @@
 }
 
 .bookWrapper {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  /* position: absolute; */
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url("../public/third/BOOK_FULL.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top 0px left 20px;
   min-width: 500px;
   margin-top: 50px;
 }
 
+@media screen and (max-width: 2500px) {
+  .bookWrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url("../public/third/BOOK_FULL.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0px left 20px;
+    min-width: 500px;
+    margin-top: 50px;
+  }
+}
 .textHighlight {
   color: #d7b98a;
 }
@@ -130,7 +168,16 @@
   margin-top: 0%;
   max-width: 590px;
   margin-bottom: -40px;
-  margin-left: 100px;
+  margin-left: 120px;
+}
+
+@media screen and (min-width: 2500px) {
+  .invite {
+    margin-top: 0%;
+    max-width: 590px;
+    margin-bottom: -40px;
+    margin-left: 6%;
+  }
 }
 
 .button {

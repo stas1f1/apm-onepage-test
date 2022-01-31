@@ -3,16 +3,15 @@ import Image from "next/image";
 import BG_IMG from "../public/roadmap/background.png";
 import ROADMAP_IMG from "../public/roadmap/ROADMAP.png";
 import HAT_IMG from "../public/roadmap/hat.svg";
-import GRASS_IMG from "../public/third/grass.png";
 import GREEN_HAT_IMG from "../public/roadmap/green_hat.svg";
 import KROSS_IMG from "../public/roadmap/kross.svg";
 import { useState, useEffect, useRef } from "react";
 import KROSS_RIGHT_IMG from "../public/roadmap/kross_right.svg";
 import RIGHT_HAT_IMG from "../public/roadmap/right_hat.svg";
 
+const MAX_TRANSLATE = 760;
 const Roadmap = () => {
   const [offsetYRoadmap, setOffsetYRoadmap] = useState(0);
-  const ref = useRef();
   const roadmapRef = useRef();
 
   const handleScrolRoadmap = () =>
@@ -27,7 +26,7 @@ const Roadmap = () => {
   }, []);
 
   const renderContent = () => (
-    <div className={styles.stepContent} id="roadmap">
+    <div className={styles.stepContent}>
       <div className={styles.roadmapContainer}>
         <div style={{ maxWidth: 960, height: 160 }}>
           <Image src={ROADMAP_IMG} />
@@ -66,7 +65,6 @@ const Roadmap = () => {
       </div>
     </div>
   );
-
   return (
     <div
       style={{
@@ -76,7 +74,8 @@ const Roadmap = () => {
         maxHeight: "2000px",
         overflowY: "hidden",
       }}
-      ref={ref}
+      id="roadmap"
+      ref={roadmapRef}
     >
       <section className={styles.Parallax}>
         <div className={styles.background}>
@@ -85,7 +84,13 @@ const Roadmap = () => {
 
         <div
           className={styles.roadmapFrame}
-          style={{ transform: `translateY(-${offsetYRoadmap * 0.25}px)` }}
+          style={{
+            transform: `translateY(-${
+              offsetYRoadmap < MAX_TRANSLATE
+                ? Math.abs(offsetYRoadmap) * 0.5
+                : MAX_TRANSLATE * 0.5
+            }px)`,
+          }}
         >
           <div className={styles.parallaxGrid}>
             <div className={styles.firstParallaxColumn}>
@@ -94,7 +99,7 @@ const Roadmap = () => {
                   <Image src={GREEN_HAT_IMG} />
                 </div>
               </div>
-              <div className={styles.krossContainer} ref={roadmapRef}>
+              <div className={styles.krossContainer}>
                 <div>
                   <Image src={KROSS_IMG} />
                 </div>

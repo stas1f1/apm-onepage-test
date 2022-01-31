@@ -2,6 +2,8 @@
   background-image: url(../public/legendaries/leg_back.png);
   width: 100%;
   background-size: cover;
+  background-position: top;
+  z-index: 2;
   background-repeat: no-repeat;
 }
 
