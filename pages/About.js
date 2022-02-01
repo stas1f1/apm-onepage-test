@@ -9,7 +9,7 @@ import GRASS_IMG from "../public/third/grass.png";
 import TICKET_LEFT_IMG from "../public/third/TICKET.png";
 import TICKET_RIGHT_IMG from "../public/third/TICKET2.png";
 import classnames from "classnames";
-const Third = () => {
+const About = () => {
   const [ticketClicked, updateTicket] = useState(false);
 
   const handleTicketClick = () => {
@@ -171,4 +171,4 @@ const Third = () => {
   );
 };
 
-export default Third;
+export default About;

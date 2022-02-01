@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Third from "./Third";
+import About from "./About";
 import First from "./First";
 import Faq from "./Faq";
 import Legendaries from "./Legendaries";
@@ -38,7 +38,6 @@ const useMediaQuery = (width) => {
 
 export default function Home() {
   const isBreakpoint = useMediaQuery(768);
-  console.log(isBreakpoint);
   return (
     <>
       {isBreakpoint ? (
@@ -52,9 +51,10 @@ export default function Home() {
           </Head>
           <First />
 
-          <Third />
+          <About />
 
           <Legendaries />
+
           <Krutilka />
           <Team />
           <Roadmap />
