@@ -21,7 +21,7 @@ export default function Faq() {
         </div>
         <div className={styles.faqText}>
           <div className={styles.faqTextBlack}>
-            q:OK, WHAT IS APEROLMAMI DUCK CLUB?
+            q: OK, WHAT IS APEROLMAMI DUCK CLUB?
           </div>
           <div className={styles.faqTextBasic}>
             a: Aperolmami Ducks Club is a generative NFT collection of 654 goofy

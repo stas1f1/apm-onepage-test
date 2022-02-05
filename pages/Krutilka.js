@@ -44,7 +44,7 @@ export default function Krutilka() {
   }, []);
 
   return (
-    <div className={{ display: "flex" }}>
+    <div className={{ display: "flex" }} id="krut">
       <div className={styles.sticky} ref={ref}>
         <div className={styles.frame}>
           {images.map((image) => (
@@ -52,7 +52,7 @@ export default function Krutilka() {
               className={[
                 styles.image,
                 styles[`image_${image}`],
-                visibleImagesMap[image] && styles.image_visible,
+                visibleImagesMap[image] && styles.image_visible
               ].join(" ")}
               key={image}
             />

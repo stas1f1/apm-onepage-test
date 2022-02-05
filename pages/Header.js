@@ -19,19 +19,25 @@ const handleLegendaries = () => {
 const handleRoadmap = () => {
   document
     .getElementById("roadmap")
+    .scrollIntoView({ block: "start", behavior: "auto" });
+};
+
+const handleKrut = () => {
+  document
+    .getElementById("krut")
     .scrollIntoView({ block: "start", behavior: "smooth" });
 };
 
 const handleTeam = () => {
   document
     .getElementById("team")
-    .scrollIntoView({ block: "start", behavior: "smooth" });
+    .scrollIntoView({ block: "start", behavior: "auto" });
 };
 
 const handleFaq = () => {
   document
     .getElementById("faq")
-    .scrollIntoView({ block: "end", behavior: "smooth" });
+    .scrollIntoView({ block: "end", behavior: "auto" });
 };
 
 export default function Header() {
@@ -47,6 +53,9 @@ export default function Header() {
           </div>
           <div className={styles.navItem} onClick={handleLegendaries}>
             legendaries
+          </div>
+          <div className={styles.navItem} onClick={handleKrut}>
+            sneakers
           </div>
           <div className={styles.navItem} onClick={handleTeam}>
             team
