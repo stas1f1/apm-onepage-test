@@ -23,16 +23,14 @@ const About = () => {
           <div className={styles.txtBtn}>
             <div className={styles.row}>
               <p className={styles.thirdText} style={{ fontSize: 29 }}>
-                We don&apos;t know who you are. We don&apos;t know where you
-                come from.
+                Welcome! Whoever you are and wherever you come from.
                 <br />
-                But we&apos;re sure to make you&nbsp;
-                <span className={styles.textHighlight}>quack</span> to the beat
-                with us.
+                We&apos;re happy to invite you join us and&nbsp;
+                <span className={styles.textHighlight}>quack</span> together!
               </p>
             </div>
             <div className={styles.row}>
-              <div className={styles.button}>TRY TO QUACK!</div>
+              <div className={styles.button}>Join the flock!</div>
             </div>
           </div>
           <div className={styles.columns}>
@@ -53,7 +51,7 @@ const About = () => {
               >
                 <div className={styles.textUpper}>
                   <p className={classnames(styles.textHighlight, styles.txt)}>
-                    Young ducklings have flown in from <br /> faraway lands with
+                    Ducklings have flown in from <br /> faraway lands with
                     gifts!
                   </p>
 
@@ -68,17 +66,17 @@ const About = () => {
                             styles.txt
                           )}
                         >
-                          999 uniquely generated duckies
+                          654 uniquely generated duckies
                         </span>
-                        &nbsp;999 uniquely generated duckies and soft with the
-                        sneakers the duckies have brought for each of you.
+                        &nbsp; and custom sneakers they have brought for each of
+                        you.
                       </span>
                     </p>
 
                     <p className={styles.txt}>
-                      A crazy Collection of cozy ducks on solana blockchain with
-                      the first-ever real-life sneaker airdrop. Will you be able
-                      to grab them all?
+                      with this cozy collection we're doing first-ever real-life
+                      sneaker airdrop where every holder counts! Will you be
+                      able to grab them?
                     </p>
                   </div>
                   <div className={styles.separator}>
@@ -95,12 +93,14 @@ const About = () => {
 
                   <div className={styles.textLower}>
                     <p className={styles.txt}>
-                      Our history goes back many years of fruitful work, in an
-                      effort to turn the world around us and bring joy to
-                      people.
+                      Our history goes back several years of fruitful work, in
+                      an effort a perfect sneaker that reflects our passionate
+                      love for iconic pairs and sneakerhead culture, delivered
+                      in an unforgettable Web 3.0 experience. <br></br>
+                      for the community.
                     </p>
                     <p className={classnames(styles.textHighlight, styles.txt)}>
-                      We are on our way. we&apos;re racing toward the suN! And
+                      We are on our way. we&apos;re racing toward the sun! And
                       we invite you into our adventure.
                     </p>
                   </div>
@@ -123,7 +123,7 @@ const About = () => {
                     style={{
                       cursor: "pointer",
                       objectFit: "fill",
-                      maxHeight: 180,
+                      maxHeight: 180
                     }}
                   >
                     <Image src={TICKET_LEFT_IMG} width={280} height={160} />
@@ -131,7 +131,7 @@ const About = () => {
                   <div
                     className={styles.rightTicketPart}
                     style={{
-                      transform: `translateX(${ticketClicked ? 28 : 0}px)`,
+                      transform: `translateX(${ticketClicked ? 28 : 0}px)`
                     }}
                   >
                     <Image src={TICKET_RIGHT_IMG} width={100} height={160} />

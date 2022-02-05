@@ -3,7 +3,7 @@ import Image from "next/image";
 import BG_IMG from "../public/roadmap/background.png";
 import ROADMAP_IMG from "../public/roadmap/ROADMAP.png";
 import HAT_IMG from "../public/roadmap/hat.svg";
-import GREEN_HAT_IMG from "../public/roadmap/green_hat.svg";
+import GREEN_HAT_IMG from "../public/roadmap/green.png";
 import KROSS_IMG from "../public/roadmap/kross.svg";
 import { useState, useEffect, useRef } from "react";
 import KROSS_RIGHT_IMG from "../public/roadmap/kross_right.svg";
@@ -36,31 +36,41 @@ const Roadmap = () => {
         </div>
       </div>
       <div className={styles.stepElement}>
-        <span>1 STEP</span>
+        <span>Phase 1: Pre-mint</span>
         <p>
-          lorem poshelnahuilorem polorem poshelnahuishelnahuilorem poshellorem
-          poshelorem poshelnahuilnahuinahuilorem poshelnahui
+          Gather community together, give out all sneak-peeks, make sure
+          everyone understands the process of getting their sneakers via NFTs.
         </p>
       </div>
       <div className={styles.stepElement}>
-        <span>2 STEP</span>
+        <span>Phase 2: Mint</span>
         <p>
-          lorem poshelnahuilorem polorem poshelnahuishelnahuilorem poshellorem
-          poshelorem poshelnahuilnahuinahuilorem poshelnahui
+          Minting will be launched on our website for presale and later for
+          public sale. After the Mint, collection will be listed on Solana
+          marketplaces.
         </p>
       </div>
       <div className={styles.stepElement}>
-        <span>3 STEP</span>
+        <span>Phase 3: Reservation</span>
         <p>
-          lorem poshelnahuilorem polorem poshelnahuishelnahuilorem poshellorem
-          poshelorem poshelnahuilnahuinahuilorem poshelnahui
+          Holders are free to submit a reservation for a pair of sneakers in
+          exchange for each held NFT from our collection.
         </p>
       </div>
       <div className={styles.stepElement}>
-        <span>4 STEP</span>
+        <span>Phase 4: Prod + delivery</span>
         <p>
-          lorem poshelnahuilorem polorem poshelnahuishelnahuilorem poshellorem
-          poshelorem poshelnahuilnahuinahuilorem poshelnahui
+          Resolving any issues with submitting errors, production of kicks with
+          regular updates about the process. Sneakers will be shipped worldwide
+          with trackings provided.
+        </p>
+      </div>
+      <div className={styles.stepElement}>
+        <span>Phase 5: Onwards</span>
+        <p>
+          Making community stronger with online (and maybe offline) events, cozy
+          merch line like no other project, Duck universe expansion and
+          mysteries that are unknown yet... (but already in the works)
         </p>
       </div>
     </div>
@@ -72,7 +82,7 @@ const Roadmap = () => {
         width: "100%",
         paddingTop: "5%",
         maxHeight: "2000px",
-        overflowY: "hidden",
+        overflowY: "hidden"
       }}
       id="roadmap"
       ref={roadmapRef}
@@ -89,7 +99,7 @@ const Roadmap = () => {
               offsetYRoadmap < MAX_TRANSLATE
                 ? Math.abs(offsetYRoadmap) * 0.5
                 : MAX_TRANSLATE * 0.5
-            }px)`,
+            }px)`
           }}
         >
           <div className={styles.parallaxGrid}>

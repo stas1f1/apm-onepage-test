@@ -1,7 +1,7 @@
 import KROSS from "../public/krutilka/17.jpg";
 import Image from "next/image";
 import LOGO_IMG from "../public/header/logo_t_br.png";
-import FRAME_IMG from "../public/mobile/frame.svg";
+import FRAME_IMG from "../public/mobile/ggr.gif";
 import styles from "../styles/Mobile.module.css";
 const MobilePreview = () => {
   return (

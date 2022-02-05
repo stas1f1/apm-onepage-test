@@ -34,3 +34,8 @@
   color: #7d4f3b;
   cursor: pointer;
 }
+
+.navItem:hover {
+  transition: 0.2s;
+  color: #ff7b00;
+}

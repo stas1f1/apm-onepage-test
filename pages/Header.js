@@ -5,23 +5,33 @@ import DISCORD_BR from "../public/header/discord_br.png";
 import TWITTER_BR from "../public/header/twitter_br.png";
 
 const handleAbout = () => {
-  document.getElementById("about").scrollIntoView();
+  document
+    .getElementById("about")
+    .scrollIntoView({ block: "start", behavior: "smooth" });
 };
 
 const handleLegendaries = () => {
-  document.getElementById("legendaries").scrollIntoView();
+  document
+    .getElementById("legendaries")
+    .scrollIntoView({ block: "start", behavior: "smooth" });
 };
 
 const handleRoadmap = () => {
-  document.getElementById("roadmap").scrollIntoView();
+  document
+    .getElementById("roadmap")
+    .scrollIntoView({ block: "start", behavior: "smooth" });
 };
 
 const handleTeam = () => {
-  document.getElementById("team").scrollIntoView();
+  document
+    .getElementById("team")
+    .scrollIntoView({ block: "start", behavior: "smooth" });
 };
 
 const handleFaq = () => {
-  document.getElementById("faq").scrollIntoView();
+  document
+    .getElementById("faq")
+    .scrollIntoView({ block: "end", behavior: "smooth" });
 };
 
 export default function Header() {
