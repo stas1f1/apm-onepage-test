@@ -74,7 +74,7 @@ const About = () => {
                     </p>
 
                     <p className={styles.txt}>
-                      with this cozy collection we're doing first-ever real-life
+                      with this cozy collection we&apos;re doing first-ever real-life
                       sneaker airdrop where every holder counts! Will you be
                       able to grab them?
                     </p>
