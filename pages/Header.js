@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/Header.module.css";
 import LOGO_TOP_BR from "../public/header/logo_top_br.png";
 import DISCORD_BR from "../public/header/discord_br.png";
+import INSTAGRAM_BR from "../public/header/inst_br.png";
 import TWITTER_BR from "../public/header/twitter_br.png";
 
 const handleAbout = () => {
@@ -69,6 +70,7 @@ export default function Header() {
         </div>
         <div className={styles.social}>
           <Image className={styles.discord} src={DISCORD_BR} />
+          <Image className={styles.instagram} src={INSTAGRAM_BR} />
           <Image className={styles.twitter} src={TWITTER_BR} />
         </div>
       </div>
