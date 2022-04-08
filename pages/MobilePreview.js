@@ -12,7 +12,7 @@ const MobilePreview = () => {
       <div className={styles.frameContainer}>
         <Image src={FRAME_IMG} layout="responsive" />
       </div>
-      <div className={styles.button}>JOIN US IN DISCORD!</div>
+      <div className={styles.button}  onclick="location.href='https://discord.gg/Xg6Drq5u4F';">JOIN US IN DISCORD!</div>
       <div className={styles.krossContainer}>
         <Image src={KROSS} layout="responsive" />
       </div>
