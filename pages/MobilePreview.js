@@ -3,6 +3,11 @@ import Image from "next/image";
 import LOGO_IMG from "../public/header/logo_t_br.png";
 import FRAME_IMG from "../public/mobile/ggr.gif";
 import styles from "../styles/Mobile.module.css";
+
+const handleJoinClick = () => {
+  location.href = "https://discord.gg/Xg6Drq5u4F";
+};
+
 const MobilePreview = () => {
   return (
     <div className={styles.mobileContainer}>
@@ -12,7 +17,7 @@ const MobilePreview = () => {
       <div className={styles.frameContainer}>
         <Image src={FRAME_IMG} layout="responsive" />
       </div>
-      <div className={styles.button}  onClick="location.href='https://discord.gg/Xg6Drq5u4F';">JOIN US IN DISCORD!</div>
+      <div className={styles.button}  onClick={handleJoinClick}>JOIN US IN DISCORD!</div>
       <div className={styles.krossContainer}>
         <Image src={KROSS} layout="responsive" />
       </div>
