@@ -72,9 +72,18 @@ const About = () => {
                             styles.txt
                           )}
                         >
-                          654 uniquely generated duckies
+                          654 uniquely generated duckies on Solana blockchain
                         </span>
-                        &nbsp; and custom sneakers they have brought for each of
+                        &nbsp; and our &nbsp;
+                        <span
+                          className={classnames(
+                            styles.textHighlight,
+                            styles.txt
+                          )}
+                        >
+                        Duck Duck sneakers
+                        </span>
+                        &nbsp; they have brought for each of
                         you.
                       </span>
                     </p>
