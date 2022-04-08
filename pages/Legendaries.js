@@ -9,6 +9,8 @@ import JOK from "../public/legendaries/jok.png";
 import MET from "../public/legendaries/met.png";
 import SNA from "../public/legendaries/sna.png";
 import AR from "../public/legendaries/ar.png";
+import PBC from "../public/legendaries/pbc.png";
+import QUE from "../public/legendaries/vop.png";
 // import HVOST_GRADIENT from "../public/legendaries/hvost-gradient.png";
 
 export default function Legendaries() {
@@ -20,34 +22,34 @@ export default function Legendaries() {
       <div className={styles.legendariesDesk}>
         <div className={styles.deskRow1}>
           <div className={styles.legImg}>
-            <Image src={DOOM} width={350} height={393} />
+            <Image src={PBC} width={350} height={393} />
           </div>
 
           <div className={styles.legImg}>
-            <Image src={KAN} width={350} height={393} />
+            <Image src={QUE} width={350} height={393} />
           </div>
 
           <div className={styles.legImg}>
-            <Image src={ZIK} width={350} height={393} />
+            <Image src={QUE} width={350} height={393} />
           </div>
         </div>
         <div className={styles.deskRow2}>
           <div className={styles.legImg}>
-            <Image src={VIG} width={350} height={393} />
+            <Image src={QUE} width={350} height={393} />
           </div>
           <div className={styles.legImg}>
-            <Image src={JOK} width={350} height={393} />
+            <Image src={QUE} width={350} height={393} />
           </div>
         </div>
         <div className={styles.deskRow3}>
           <div className={styles.legImg}>
-            <Image src={MET} width={350} height={393} />
+            <Image src={QUE} width={350} height={393} />
           </div>
           <div className={styles.legImg}>
-            <Image src={SNA} width={350} height={393} />
+            <Image src={QUE} width={350} height={393} />
           </div>
           <div className={styles.legImg}>
-            <Image src={AR} width={350} height={393} />
+            <Image src={QUE} width={350} height={393} />
           </div>
         </div>
       </div>
