@@ -69,17 +69,15 @@ export default function Header() {
           </div>
         </div>
         <div className={styles.social}>
-          <Image className={styles.discord} src={DISCORD_BR}>
-            <a href="https://discord.gg/Xg6Drq5u4F"/>
-          </Image>
-
-          <Image className={styles.instagram} src={INSTAGRAM_BR}>
-            <a href="https://www.instagram.com/aperolmami"/>
-          </Image>
-
-          <Image className={styles.twitter} src={TWITTER_BR}>
-            <a href="https://twitter.com/aperolmamiNFT"/>
-          </Image>
+        <a href="https://discord.gg/Xg6Drq5u4F">
+          <Image className={styles.discord} src={DISCORD_BR}/>
+        </a>
+        <a href="https://www.instagram.com/aperolmami">
+          <Image className={styles.instagram} src={INSTAGRAM_BR}/>
+        </a>
+        <a href="https://twitter.com/aperolmamiNFT">
+          <Image className={styles.twitter} src={TWITTER_BR}/>
+        </a>    
         </div>
       </div>
     </div>
