@@ -16,6 +16,11 @@ const About = () => {
     updateTicket(true);
     location.href = "https://discord.gg/Xg6Drq5u4F";
   };
+
+  const handleJoinClick = () => {
+    location.href = "https://discord.gg/Xg6Drq5u4F";
+  };
+
   return (
     <>
       <div className={styles.background}>
@@ -31,7 +36,7 @@ const About = () => {
               </p>
             </div>
             <div className={styles.row}>
-              <div className={styles.button} onClick="location.href='https://discord.gg/Xg6Drq5u4F';">Join the flock!</div>
+              <div className={styles.button} onClick={handleJoinClick}>Join the flock!</div>
             </div>
           </div>
           <div className={styles.columns}>
