@@ -30,7 +30,7 @@ export default function Legendaries() {
           </div>
 
           <div className={styles.legImg}>
-            <Image src={QUE} width={350} height={393} />
+            <Image src={VIG} width={350} height={393} />
           </div>
         </div>
         <div className={styles.deskRow2}>
